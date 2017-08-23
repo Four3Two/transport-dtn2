@@ -518,6 +518,28 @@ a.button-readmore {
 }
 /*-- //button-hover-effect --*/
 
+.panel-default > .panel-heading{
+    background-color: #FFF; 
+    color: 000;
+    text-decoration: none;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+    content: "\f0da";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: #f58220;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f0d7";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.alert{
+    display: none;
+}
+
 /*-- //welcome --*/
 /*-- slid --*/
 .services .services-grids{ 
@@ -539,6 +561,16 @@ a.button-readmore {
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
     transition: .5s all;
+}
+
+.facility .services-grids h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    margin: 0.2em 0 .5em;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    line-height: 30px;
 }
 .services .services p {
     color: #fff;
@@ -564,9 +596,16 @@ a.button-readmore {
     background: url(../images/bg-index.jpg)no-repeat 0px center fixed;
     background-size: cover;
     text-align: center;
+    padding: 3em 0;
+}
+
+.facility{
+     background: url(../images/bus4.jpg)no-repeat 0px center fixed;
+    background-size: cover;
+    text-align: center;
     padding: 6em 0;
 }
-.services h4 {
+.services h4, .facility h4 {
     font-size: 3.5em;
     color: #fff;
     font-weight: 900;
@@ -574,8 +613,7 @@ a.button-readmore {
     font-family: neosans-medium;
 }
 .services p {
-    color: #fff;
-    width: 69%;
+    color: #fff; 
     margin: 0 auto;
 }
 /*-- //slid --*/
@@ -1205,6 +1243,9 @@ span.orange{
   font-size:21px; 
   } 
 
+.para{
+    text-align: justify;
+}
 
   
 /*hover*/
