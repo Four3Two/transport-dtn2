@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Transport Panorama Destination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Transport Panorama Destinaion" />
+    <!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner-w3layouts">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="banner-img1">
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-img2">
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-img3">
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-img4">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- FlexSlider -->
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+        </script>
+        <!-- //FlexSlider -->
+        <!-- banner-info -->
+        <div class="banner-agileinfo">
+            <div class="container">
+                <div class="w3header">
+                    <!--header-->
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h1><a  href="index.html"><img class="img-responsive" src="images/logo-white.png" alt="Logo Panorama"></a></h1>
+                        </div>
+                        <!-- navbar-header -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html" class="active">Beranda</a></li>
+                                <li><a href="about.html">Tentang Kami</a></li>
+                                <li><a href="our-fleet.html">Transportasi</a></li>
+                                <li><a href="our-services.html">Produk</a></li>
+                                <li><a href="gallery.html">Album</a></li>
+                                <li><a href="contact.html">Hubungi</a></li>
+                            </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //header -->
+                <div class="banner-text">
+                    <h2>Panorama Destination</h2>
+                    <h5>Transportation Website</h5>
+                </div>
+            </div>
+            <!-- //banner-info -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- //search -->
+    <div class="container">
+        <div style="background-color: #1c1c1c;">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#transfer">Transfer (one way)</a></li>
+                <li><a data-toggle="pill" href="#citytour">City Tour / Transit</a></li>
+            </ul>
+            <script>
+            jQuery(function() {
+
+
+                $("#dt1, #dt3").datepicker('setDate', '+0');
+
+                jQuery("#dt1, #dt3").datepicker({
+                    minDate: 0,
+                    dateFormat: "dd-M-yy",
+                    onSelect: function(date) {
+                        //alert("none"); 
+                        var date1 = jQuery('#dt1').datepicker('getDate');
+                        var date = new Date(Date.parse(date1));
+                        date.setDate(date.getDate() + 1);
+                        var newDate = date.toDateString();
+                        newDate = new Date(Date.parse(newDate));
+                        jQuery('#dt2').datepicker("option", "minDate", newDate);
+
+                    }
+
+                });
+            });
+            </script>
+            <div class="tab-content" style="padding: 0 1em 1em 1em;">
+                <div id="transfer" class="tab-pane fade in active">
+                    <form class="form-inline" action="book-step-1.html">
+                        <div class="form-group">
+                            <label class="sr-only" for="date">Date:</label>
+                            <!-- <div class="bnr-left">
+                            <p>Check In</p>
+                        </div> -->
+                            <input type="text" class="form-control date" id="dt1" placeholder="Pilih Tanggal" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleSelect1">Lokasi Penjemputan</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option value="" disabled selected style="color:  #C7C7CD;">Lokasi Penjemputan</option>
+                                <optgroup label="Luar kota A">
+                                    <option value="Cibubur">Cibubur</option>
+                                    <option value="Cibubur">Cimanggis</option>
+                                    <option value="Cibinong">Cibinong</option>
+                                    <option value="Sentul">Sentul</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Bekasi">Bekasi</option>
+                                    <option value="Cikarang">Cikarang</option>
+                                    <option value="Tambun">Tambun</option>
+                                    <option value="Depok">Depok</option>
+                                    <option value="Tangerang">Tangerang</option>
+                                    <option value="Serpong">Serpong</option>
+                                    <option value="Parung">Parung</option>
+                                    <option value="Tanjung Kait">Tanjung Kait</option>
+                                </optgroup>
+                                <optgroup label="Luar kota B">
+                                    <option value="Puncak">Puncak</option>
+                                    <option value="Ciawi">Ciawi</option>
+                                    <option value="Cibodas">Cibodas</option>
+                                    <option value="Cipanas">Cipanas</option>
+                                    <option value="Leuwiliang">Leuwiliang</option>
+                                    <option value="Karawang">Karawang</option>
+                                    <option value="Cikampek">Cikampek</option>
+                                    <option value="Salabintana">Salabintana</option>
+                                    <option value="Sukabumi">Sukabumi</option>
+                                    <option value="Banten">Banten</option>
+                                    <option value="Serang">Serang</option>
+                                    <option value="Cilegon">Cilegon</option>
+                                    <option value="Merak">Merak</option>
+                                    <option value="Anyer">Anyer</option>
+                                    <option value="P.Carita">P.Carita</option>
+                                    <option value="Karang Bolong">Karang Bolong</option>
+                                </optgroup>
+                                <optgroup label="Luar kota C">
+                                    <option value="Labuan">Labuan</option>
+                                    <option value="Cianjur">Cianjur</option>
+                                    <option value="Jatiluhur">Jatiluhur</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota D">
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Subang">Subang</option>
+                                    <option value="Lembang">Lembang</option> 
+                                    <option value="Ciater">Ciater</option>
+                                    <option value="T.Perahu">T.Perahu</option>
+                                    <option value="Pelabuhan Ratu">Pelabuhan Ratu</option> 
+                                    <option value="Citarik">Citarik</option>
+                                    <option value="Tj. Lesung">Tj. Lesung</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota E">
+                                    <option value="Situpatenggang">Situpatenggang</option>
+                                    <option value="Pangalengan">Pangalengan</option>
+                                    <option value="Kawah Putih">Kawah Putih</option> 
+                                    <option value="Ujung Genteng">Ujung Genteng</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota F">
+                                    <option value="Garut">Garut</option>
+                                    <option value="Tasikmalaya">Tasikmalaya</option>
+                                    <option value="Ciamis">Ciamis</option> 
+                                    <option value="Cirebon">Cirebon</option> 
+                                    <option value="Kuningan">Kuningan</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleSelect1">Lokasi Pengantaran</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option value="" disabled selected style="color:  #C7C7CD;">Lokasi Pengantaran</option>
+                                 <optgroup label="Luar kota A">
+                                    <option value="Cibubur">Cibubur</option>
+                                    <option value="Cibubur">Cimanggis</option>
+                                    <option value="Cibinong">Cibinong</option>
+                                    <option value="Sentul">Sentul</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Bekasi">Bekasi</option>
+                                    <option value="Cikarang">Cikarang</option>
+                                    <option value="Tambun">Tambun</option>
+                                    <option value="Depok">Depok</option>
+                                    <option value="Tangerang">Tangerang</option>
+                                    <option value="Serpong">Serpong</option>
+                                    <option value="Parung">Parung</option>
+                                    <option value="Tanjung Kait">Tanjung Kait</option>
+                                </optgroup>
+                                <optgroup label="Luar kota B">
+                                    <option value="Puncak">Puncak</option>
+                                    <option value="Ciawi">Ciawi</option>
+                                    <option value="Cibodas">Cibodas</option>
+                                    <option value="Cipanas">Cipanas</option>
+                                    <option value="Leuwiliang">Leuwiliang</option>
+                                    <option value="Karawang">Karawang</option>
+                                    <option value="Cikampek">Cikampek</option>
+                                    <option value="Salabintana">Salabintana</option>
+                                    <option value="Sukabumi">Sukabumi</option>
+                                    <option value="Banten">Banten</option>
+                                    <option value="Serang">Serang</option>
+                                    <option value="Cilegon">Cilegon</option>
+                                    <option value="Merak">Merak</option>
+                                    <option value="Anyer">Anyer</option>
+                                    <option value="P.Carita">P.Carita</option>
+                                    <option value="Karang Bolong">Karang Bolong</option>
+                                </optgroup>
+                                <optgroup label="Luar kota C">
+                                    <option value="Labuan">Labuan</option>
+                                    <option value="Cianjur">Cianjur</option>
+                                    <option value="Jatiluhur">Jatiluhur</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota D">
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Subang">Subang</option>
+                                    <option value="Lembang">Lembang</option> 
+                                    <option value="Ciater">Ciater</option>
+                                    <option value="T.Perahu">T.Perahu</option>
+                                    <option value="Pelabuhan Ratu">Pelabuhan Ratu</option> 
+                                    <option value="Citarik">Citarik</option>
+                                    <option value="Tj. Lesung">Tj. Lesung</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota E">
+                                    <option value="Situpatenggang">Situpatenggang</option>
+                                    <option value="Pangalengan">Pangalengan</option>
+                                    <option value="Kawah Putih">Kawah Putih</option> 
+                                    <option value="Ujung Genteng">Ujung Genteng</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota F">
+                                    <option value="Garut">Garut</option>
+                                    <option value="Tasikmalaya">Tasikmalaya</option>
+                                    <option value="Ciamis">Ciamis</option> 
+                                    <option value="Cirebon">Cirebon</option> 
+                                    <option value="Kuningan">Kuningan</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleSelect1">Pilih mobil</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option value="" disabled selected style="color:  #C7C7CD;">Pilih mobil</option>
+                                <option>Big Bus</option>
+                                <option>Medium Bus</option>
+                                <option>Innova</option>
+                                <option>Avanza</option>
+                                <option>Hiace</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-readmore hvr-sweep-to-right">Pesan</button>
+                    </form>
+                </div>
+                <div id="citytour" class="tab-pane fade">
+                    <form class="form-inline" action="booking-step-1.html">
+                        <div class="form-group">
+                            <label class="sr-only" for="date">Date:</label>
+                            <!-- <div class="bnr-left">
+                            <p>Check In</p>
+                        </div> -->
+                            <input type="text" class="form-control date" id="dt3" placeholder="Pilih tanggal" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleSelect1">Drop off Location</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option value="" disabled selected style="color:  #C7C7CD;">Pilih paket</option>
+                                <optgroup label="Luar kota bermalam A">
+                                    <option value="Puncak">Puncak</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Ciawi">Ciawi</option>
+                                    <option value="Cibodas">Cibodas</option>
+                                    <option value="Cipanas">Cipanas</option>
+                                    <option value="Sukabumi">Sukabumi</option>
+                                    <option value="Salabintana">Salabintana</option>
+                                    <option value="Anyeran">Anyeran</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam B">
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Lembang">Lembang</option>
+                                    <option value="Ciater">Ciater</option>
+                                    <option value="T.Perahu">T.Perahu</option>
+                                    <option value="Pelabuhan Ratu">Pelabuhan Ratu</option>
+                                    <option value="Citarik">Citarik</option>
+                                    <option value="Carita">Carita</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam C">
+                                    <option value="Situpatenggang">Situpatenggang</option>
+                                    <option value="Ciwidey">Ciwidey</option>
+                                    <option value="Pangalengan">Pangalengan</option> 
+                                    <option value="Kawah Putih">Kawah Putih</option>
+                                    <option value="Ujung Genteng">Ujung Genteng</option>
+                                    <option value="Sawarna">Sawarna</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam D">
+                                    <option value="Garut">Garut</option>
+                                    <option value="Tasikmalaya">Tasikmalaya</option>
+                                    <option value="Ciamis">Ciamis</option> 
+                                    <option value="Cirebon">Cirebon</option>
+                                    <option value="Kuningan">Kuningan</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam E">
+                                    <option value="Pangandaran">Pangandaran</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam F">
+                                    <option value="Jawa Tengah (Drop)">Jawa Tengah (Drop)</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam G">
+                                    <option value="Jawa Tengah">Jawa Tengah</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam H">
+                                    <option value="Jawa Timur (Drop)">Jawa Timur (Drop)</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam I">
+                                    <option value="Jawa Timur">Jawa Timur</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam J">
+                                    <option value="Jawa - Bali">Jawa - Bali</option> 
+                                </optgroup>
+                                <optgroup label="Luar kota bermalam K">
+                                    <option value="Jawa - Bali - Lombok">Jawa - Bali - Lombok</option> 
+                                </optgroup> 
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleSelect1">Car</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option value="" disabled selected style="color:  #C7C7CD;">Pilih mobil</option>
+                                <option>Big Bus</option>
+                                <option>Medium Bus</option>
+                                <option>Innova</option>
+                                <option>Avanza</option>
+                                <option>Hiace</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-readmore">pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //search -->
+    <!-- welcome -->
+    <div class="col-md-4 col-sm-4 wow fadeInRight image-bus pull-right">
+        <img class="img-responsive" style="margin-top: 15%;" src="images/bus2.jpg" alt="Bus Panorama">
+        <div class="clearfix"> </div>
+    </div>
+    <div class="welcome">
+        <div class="container">
+            <div class="col-md-8 pull-left col-sm-8 wow fadeInLeft">
+                <div class="agileits-title">
+                    <h3>Panorama Destination</h3>
+                </div>
+            </div>
+            <div class="welcome-info">
+                <div class="col-md-8 pull-left col-sm-8 wow fadeInLeft">
+                    <p class="parag">Selamat datang di PT Destinasi Tirta Nusantara, Tbk. Kami hadir disini sebagai agen penyedia jasa layanan transportasi wisata Anda. Sebagai agen transportasi wisata yang terdepan, kami memberikan pelayanan yang mencakup seluruh kota-kota besar di Indonesia.
+                        <br>
+                        <br> Memberdayakan para pengemudi profesional yang matang akan pengalaman, sudah menjadi komitmen kami untuk mengantar Anda dengan aman dan nyaman ke destinasi wisata yang dituju. Para tenaga muda kami yang ramah, cekatan dan terampil pun siap memberikan pelayanan yang cepat untuk Anda.
+                        <br>
+                        <br> Seiring dengan banyaknya permintaan pelanggan yang terus meningkat, bukan berarti kami mengesampingkan standar kualitas pelayanan yang diberikan. Selalu mereferensikan armada kendaraan dengan mutu terbaik, sudah menjadi jaminan pelayanan transportasi wisata kami. Untuk menyesuaikan dengan kebutuhan tumpangan Anda, kami juga memiliki ragam kendaraan mulai dari volume kecil, sedang dan besar.
+                        <br>
+                        <br> Terus bergerak maju dan semakin berkembang, kami mendedikasikan seluruh tenaga untuk memberikan pelayanan transportasi wisata terbaik bagi Anda. Karena, senyum dan kepuasan Anda merupakan tanggungjawab dan prestasi kami.
+                    </p>
+                    <a href="about.html" class="button-readmore hvr-sweep-to-right">read more</a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //welcome -->
+    <!-- about-slid -->
+    <div class="services">
+        <div class="container"> 
+            <div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+                <i class="fa fa-gears" aria-hidden="true"></i>
+                <h4>Ragam Pelayanan</h4>
+                <p>• Antar jemput anak sekolah
+                    <br> • Antar jemput karyawan kantor
+                    <br> • Tur keliling kota
+                    <br> • Dll
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                <h4>Paket Tur </h4>
+                <p>• Museum Tour Package
+                    <br> • TMII Tour Package
+                    <br> • Waterbom Tour Package
+                    <br> • Dll
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <h4>Staf Pengemudi</h4>
+                <p>Mampu melayani pelanggan dengan sikap yang baik dan ramah, juga menjadi poin penting bagi kami demi menjaga mutu pelayanan.</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <h4>Kru Terpercaya</h4>
+                <p>Memahami dan memenuhi kebutuhan pelanggan secara penuh, menjadi tanggungjawab yang sudah melekat pada seluruh kru kami.</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //about-slid -->
+    <!-- subscribe -->
+    <!-- <div class="subscribe wthree-sub">
+        <div class="container">
+            <h4>Newsletter</h4>
+            <p>Silakan berlangganan newsletter kami untuk mendapatkan penawaran ekslusif.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Email anda" required="">
+                <input type="submit" value="Kirim">
+                <div class="clearfix"> </div>
+            </form>
+        </div>
+    </div> -->
+    <!-- //subscribe -->
+
+    <div class="test" style="background-color: #f58220;">
+        <div style="text-align: center;padding: 1.4em 0;font-size: 24px;font-weight: bold; text-transform: uppercase;"> 
+        Terus bergerak maju dan semakin berkembang
+        </div>
+    </div>
+
+    <!--         slider -->
+    <div class="partners">
+        <div class="container"> 
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme wow fadeInUp">
+                    <div class="item"><img src="images/logo/1.png" alt=""></div>
+                    <div class="item"><img src="images/logo/2.png" alt=""></div>
+                    <div class="item"><img src="images/logo/3.png" alt=""></div>
+                    <div class="item"><img src="images/logo/4.png" alt=""></div>
+                    <div class="item"><img src="images/logo/5.png" alt=""></div>
+                    <div class="item"><img src="images/logo/6.png" alt=""></div>
+                    <div class="item"><img src="images/logo/7.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--             end of slider -->
+    <!-- footer start here -->
+    <div class="agile-footer">
+        <div class="container">
+            <div class="footer-agileinfo">
+                <div class="col-md-4 col-sm-6 footer-wthree-grid">
+                    <h6><a  href="index.html">Panorama Destination</a></h6>
+                    <p>Kami hadir disini sebagai agen penyedia jasa layanan transportasi wisata Anda. Sebagai agen transportasi wisata yang terdepan, kami memberikan pelayanan yang mencakup seluruh kota-kota besar di Indonesia. </p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-wthree-grid">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="our-fleet.html">Transportasi</a></li>
+                        <li><a href="our-services.html">Produk</a></li>
+                        <li><a href="gallery.html">Album</a></li>
+                        <li><a href="contact.html">Hubungi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-wthree-grid w3social">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer end here -->
+    <!-- copy rights start here -->
+    <div class="copyw3-agile">
+        <div class="container">
+            <p>© 2017 Panorama Destination, Tbk.</p>
+        </div>
+    </div>
+    <!-- //copy right end here -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- start-smooth-scrolling -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 7
+            }
+        }
+    })
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
