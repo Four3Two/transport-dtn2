@@ -247,8 +247,7 @@ body a:focus {
 }
 .banner-text h5 {
     font-size: 2em;
-    color: #f58220;
-    font-weight: 100;
+    color: #f58220; 
     letter-spacing: 1px;
     font-family: neosans;
 }
