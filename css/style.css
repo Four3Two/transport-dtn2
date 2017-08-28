@@ -250,6 +250,7 @@ body a:focus {
     color: #f58220;
     font-weight: 100;
     letter-spacing: 1px;
+    font-family: neosans;
 }
 .w3btn{
     border: none;
