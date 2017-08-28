@@ -19,8 +19,8 @@
 }
 
 @font-face {
-    font-family: neosans-medium;
-    src: url('../fonts/neosans-medium.otf');
+    font-family: neosans;
+    src: url('../fonts/neosans.otf');
 }
 
 @font-face {
@@ -243,7 +243,7 @@ body a:focus {
     font-weight: 800;
     margin: .6em 0;
     letter-spacing: 5px;
-    font-family: neosans-medium;
+    font-family: neosans;
 }
 .banner-text h5 {
     font-size: 2em;
@@ -414,7 +414,7 @@ p {
     font-size: 3.5em;
     color: #58595b;
     text-align: center;
-	font-family: neosans-medium;
+	font-family: neosans;
 }
 .agileits-title p {
     text-align: center;
@@ -610,7 +610,7 @@ a.button-readmore {
     color: #fff;
     font-weight: 900;
     margin-bottom: 0.8em; 
-    font-family: neosans-medium;
+    font-family: neosans;
 }
 .services p {
     color: #fff; 
@@ -625,7 +625,7 @@ a.button-readmore {
 .subscribe h4 {
     font-size: 3.5em;
     color: #58595b;
-    font-family: neosans-medium;
+    font-family: neosans;
 }
 .subscribe form {
     width: 53%;
@@ -1130,7 +1130,7 @@ span.orange{
 }
 .team h4 {
     color: #ffffff;
-    font-family: neosans-medium;
+    font-family: neosans;
     font-size: 1.8em;
     margin-bottom: 0.3em;
 }
@@ -1303,7 +1303,7 @@ span.orange{
   background-color:rgba(0,0,0,0.3);
   min-width: 360px;
   height:250px;
-  font-family: neosans-medium;
+  font-family: neosans;
   font-size:16px;
   line-height: 18px;
   text-decoration: none;
@@ -1579,7 +1579,7 @@ ul.simplefilter {
     color: #ff7200;
     text-transform: capitalize;
     margin-bottom: .8em;
-    font-family: neosans-medium;
+    font-family: neosans;
 }
 .wthree_single_grid ul li{
 	display:inline-block;
@@ -1616,7 +1616,7 @@ h4.w3ls-title {
     font-size: 2.5em;
     color: #58595b;
     margin-bottom: 0.7em;
-    font-family: neosans-medium;
+    font-family: neosans;
 }
 .popular-posts {
     margin-top: 3em;
